@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="Width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/9f415f84d8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id = "header">
+    <div class = "container">
+        <nav>
+            <img src="011.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class ="header-text">
+            <p>Sotware Developer</p>
+            <h1> Hello. <br> I'm <span> Chavini</span> Wijerathna</h1>
+        </div>
+    </div>
+  </div>
+  <!-- -------about----->
+  <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="personal.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title"> About me </h1>
+                <p>I'm Chavini Wijerathna , a first year university student passionate about data science. Currently studing software Development,I'm dedicated to bulding a strong foundation in programming.I'm excited to apply my knowledge to real-world projects and contribute to innovative solutions as I grow professionaly.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skiils')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web development</span><br>Web app Development</li>
+                        <li><span>programming Languages</span><br>Python,Java, HTML/SQL</li>
+                        <li><span>Software Proficiency</span><br>Micosoft Office Suite,Google Workpace</li>
+                    </ul>
+                </div>
+                <div class="tab-contents " id="experience">
+                    <ul>
+                        <li><span>2023</span><br>Completed Python certificate course at university of Moratuwas </li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024</span><br>Start studing Data Science at SLTC Research university </li>
+                        <li><span>2022</span><br>Completed Advanced Level Examination at Anula Vidyalaya</li>
+                        <li><span>2019</span><br>Completed Ordinary Level Examination at Gothami Balika Vidyalaya</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- ----- sevices------->
+   <div id = "services">
+    <div class="container">
+        <h1 class="sub-titlte"> My Services </h1>
+        <div class="sevices-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p> Creating responsive , visually appealing websites using HTML, CSS and JavaScript. 
+                </p>
+                <a href="#"> Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Content Creating</h2>
+                <p> Blog Writing <br>
+                    Social Media Managemnet <br>
+                    Video Editing
+                </p>
+                <a href="#"> Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store-ios"></i>
+                <h2>Graphic Design</h2>
+                <p> Logo Design <br>
+                    Branding and Visual Identity <br>
+                    Illustration 
+                </p>
+                <a href="#"> Learn More</a>
+            </div>
+
+        </div>
+    </div>
+    <!------- portfolio----->
+    <div id="portfolio">
+        <h1 class="sub-titlte">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="01.jpg" >
+                <div class="layer">
+                    <h3>WEb Development</h3>
+                    <p>Portofilio websites <br>
+                    Small Business WEbsites <br>
+                     E-commece projects </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="02.jpg" >
+                <div class="layer">
+                    <h3>Content Creation</h3>
+                    <p>Blog Articles <br>
+                    Video Edits </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="03.jpg" >
+                <div class="layer">
+                    <h3>Graphic Design </h3>
+                    <p>Logo DEsign <br>
+                    Social Media Graphics </p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+
+    </div>
+
+   </div>
+     <!-- Contact Section -->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p> <i class="fas fa-paper-plane"></i>chaviniwijerathna01@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>+9476 208 9321</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"> <i class="fab fa-facebook"></i></a>
+                        <a href="https://x.com/Chavini01"> <i class="fa-brands fa-twitter"></i></i></a>
+                        <a href="https://instagram.com"> <i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/"> <i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href=".pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form  name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="e-mail" placeholder="Your Name" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2"> submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright@chavini.made with <i class="fas fa-heart"></i> by easy tutorials</p>
+        </div>
+      </div>
+
+
+
+    
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab (tabname){
+        for( tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+  </script>
+  <script>
+    var sidemenu= document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function openmenu(){
+            sidemenu.style.right="-200px";
+    }
+  </script>
+  
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwq0sX69lRd2T3BL3T_M6gU3y2UiqBaxQjZSJUItBgdgUZShOLCOT9R6-T2ZBNOJqM0ew/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Messagesent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  
+
+</body>
+</html>
